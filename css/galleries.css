@@ -8,11 +8,15 @@
 .gallery-caption { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; z-index: 10; pointer-events: none; }
 .gallery-caption .entry-summary { display: inline-block; position: absolute; width: 100%; bottom: 0; color: #F7F6F5; opacity: 1;
 -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease; }
+.gallery-caption .entry-summary1 { display: inline-block; position: absolute; width: 100%; bottom: 0; color: #F7F6F5; opacity: 0;
+	-webkit-transition: all .2s ease; -moz-transition: all .2s ease; -ms-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease; }
 .gallery-item:hover .gallery-caption .entry-summary { opacity: 1; }
+.gallery-item:hover .gallery-caption .entry-summary1 { opacity: 1; }
 .gallery-caption h3, .gallery-caption p { -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; padding: 0; margin: 0; }
 .gallery-item:hover .gallery-caption h3, .gallery-item:hover .gallery-caption p { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
 .gallery-caption h3  { font-weight: bold; text-transform: uppercase; font-size: .9em; letter-spacing: 0.05em; }
 .gallery-caption .entry-summary > p { font-family: Times, serif; font-style: italic; font-size: .8em; opacity: .8; }
+.gallery-caption .entry-summary1 > p { font-family: Times, serif; font-style: italic; font-size: .8em; opacity: .8; }
 
 #gallery-filter { display: block; position: relative; top: 12px; }
 #gallery-filter ul {  list-style: none; padding: 0; margin: 0 0 .3em 0; font-size: .8em; letter-spacing: 0.05em; }
@@ -48,6 +52,7 @@
 .masonry-gallery .gallery-item:hover .gallery-icon { opacity: 1; }
 .masonry-gallery .gallery-icon { text-align: center; }
 .masonry-gallery .gallery-caption .entry-summary { text-align: center; bottom: 0; padding: 1em; font-size: 1.2em; color: #F7F6F5; }
+.masonry-gallery .gallery-caption .entry-summary1 { text-align: center; bottom: 0; padding: 1em; font-size: 1.2em; color: #F7F6F5; }
 .masonry-gallery .gallery-item.col-5 .gallery-caption { font-size: .85em; }
 .masonry-gallery .gallery-caption h3 { -webkit-transform: translate3d(0,-20px,0); transform: translate3d(0,-20px,0); margin-bottom: .5em; }
 .masonry-gallery .gallery-caption p { -webkit-transform: translate3d(0,20px,0); transform: translate3d(0,20px,0); padding-bottom: 1em; }
@@ -55,6 +60,7 @@
 .fullscreen-gallery.gallery { height: 100vh !important; margin: 0; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
 .fullscreen-gallery .gallery-caption { position: absolute; bottom: 0; left: 0; z-index: 99; pointer-events: auto; }
 .fullscreen-gallery .gallery-caption .entry-summary { width: 100%; bottom: 0; padding: 2.5em 4.5%; opacity: 1; }
+.fullscreen-gallery .gallery-caption .entry-summary1 { width: 100%; bottom: 0; padding: 2.5em 4.5%; opacity: 1; }
 .fullscreen-gallery .gallery-item { height: 100%; width: 100%; }
 .fullscreen-gallery .gallery-icon { height: 100%; width: 100%; }
 .fullscreen-gallery .gallery-video  { height: 100%; width: 100%; background-size: cover; }
@@ -102,6 +108,7 @@ body.gallerythumbsrevealed .position-absolute { -webkit-transform: translate3d(0
 .vertical-gallery .gallery-icon img { width: auto; max-height: 100%; max-width: 100%; float: right; position: absolute; bottom: 0; right: 0; }
 .vertical-gallery .gallery-caption { position: relative; display: inline-block; width: 45%; height: 100%; float: left; opacity: 0; }
 .vertical-gallery .gallery-caption .entry-summary { color: #222; opacity: 1; bottom: 10%; padding: 0 0 0 5em; text-align: left; }
+.vertical-gallery .gallery-caption .entry-summary1 { color: #222; opacity: 1; bottom: 10%; padding: 0 0 0 5em; text-align: left; }
 .vertical-gallery .gallery-caption h3 { font-size: 2em; line-height: 1.1; margin-bottom: .5em; }
 
 #gallerypuntiks { width: 18px; position: absolute; bottom: 0; z-index: 90; }
@@ -141,11 +148,13 @@ img.mfp-img { padding: 0; }
 
 	/*galleries adapted*/
 	.fullscreen-gallery .gallery-caption .entry-summary { padding-bottom: 2em; }
+	.fullscreen-gallery .gallery-caption .entry-summary1 { padding-bottom: 2em; }
 	.masonry-gallery .gallery-item {width: 98% !important;}
 }
 
 @media screen and (max-width: 640px) and (orientation: portrait) {
 	/*galleries adapted*/
 	.fullscreen-gallery .gallery-caption .entry-summary { padding-bottom: 5em; }
+	.fullscreen-gallery .gallery-caption .entry-summary1 { padding-bottom: 5em; }
 	.masonry-gallery .gallery-item { width: 98% !important; }
 	  
