@@ -3,7 +3,7 @@ title: PHOTORAMA
 email: ""
 description: "Photo Journal"
 url: "https://anonimoper.github.io"
-baseurl: "/portfolio"
+baseurl: "/PortFolio"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://anonimoper.github.io/portfolio/gallery/"  
-  - JOURNAL: "https://anonimoper.github.io/portfolio/journal/"
-  - ABOUT: "https://anonimoper.github.io/portfolio/about/"
+  - GALLERY: "https://anonimoper.github.io/PortFolio/gallery/"  
+  - JOURNAL: "https://anonimoper.github.io/PortFolio/journal/"
+  - ABOUT: "https://anonimoper.github.io/PortFolio/about/"
 
 # All translation keys
 translations:
